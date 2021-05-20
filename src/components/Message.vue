@@ -101,7 +101,7 @@ export default {
       const shares = await axios.get(
         "https://quiet-garden-93643.herokuapp.com/api/shares"
       );
-      for (let i =0; i < share.data.data.length; i++) {
+      for (let i =0; i < shares.data.data.length; i++) {
         await axios
           .get(
             "https://quiet-garden-93643.herokuapp.com/api/shares/" +
